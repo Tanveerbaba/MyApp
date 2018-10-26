@@ -23,3 +23,10 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+/.gitignore
+/.mvn/
+/README.md
+/mvnw
+/mvnw.cmd
+/pom.xml
+/src/
