@@ -20,7 +20,7 @@ public class MyAppApplication {
 	
 	@RequestMapping(value = "/")
 	public String index() {
-		return "Jenkins is Working!!!";
+		return "Hey Is it really Working";
 	}
 	
 }
