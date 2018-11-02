@@ -20,7 +20,7 @@ public class MyAppApplication {
 	
 	@RequestMapping(value = "/")
 	public String index() {
-		return "I've made it!!!";
+		ret "I've made it!!!";
 	}
 	
 }
