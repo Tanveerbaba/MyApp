@@ -11,10 +11,13 @@ pipeline {
 				sh "mvn test"
 			}
 		}
-		stage("Deploy") {
-			steps {
-				sh "mvn package"
+		if (currentResult == SUCCESS) {
+			stage("Deploy") {
+				steps {
+					sh "mvn package"
+				}
 			}
 		}
 	}
+	echo number
 }
