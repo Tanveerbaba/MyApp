@@ -12,13 +12,14 @@ pipeline {
 				sh "mvn test"
 			}
 		}
-		if (currentResult == SUCCESS) {
+		
 			stage("Deploy") {
 				steps {
-					sh "mvn package"
+					if (currentResult == SUCCESS) {
+						sh "mvn package"
+					}
 				}
 			}
-		}
 	}
 	
 }
