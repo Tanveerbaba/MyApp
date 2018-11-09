@@ -3,6 +3,7 @@ pipeline {
 	stages {
 		stage("clean") {
 			steps {
+				echo number
 				sh "mvn clean"
 			}
 		}
@@ -19,5 +20,5 @@ pipeline {
 			}
 		}
 	}
-	echo number
+	
 }
