@@ -78,7 +78,7 @@
 		</plugins>
 	</build>
 	<distributionManagement>
-		<repoository>
+		<repository>
 			<id>deployment</id>
 			<name>Internal Releases</name>
 			<url>http://localhost:8081/repository/nexusRel/</url>
