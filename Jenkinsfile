@@ -1,8 +1,5 @@
 pipeline {
 	agent any
-	parameters {
-		result: false
-	}
 	stages {
 		stage("clean") {
 			steps {
@@ -13,19 +10,16 @@ pipeline {
 		stage("test") {
 			steps {
 				sh "mvn test"
-				result = true
 			}
 		}
 		
 		stage("Deploy") {
-			if( r == 0) {
 				when {
-					result true
+					stage build
 				}
 				steps {
 					sh "mvn package"
 				}
-			}
 		}
 	}
 	
