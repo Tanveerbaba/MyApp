@@ -12,10 +12,11 @@ pipeline {
 				int r = sh "mvn test"
 			}
 		}
-		if( r == 0) {
-			stage("Deploy") {
+		
+		stage("Deploy") {
+			if( r == 0) {
 				steps {
-						sh "mvn package"
+					sh "mvn package"
 				}
 			}
 		}
