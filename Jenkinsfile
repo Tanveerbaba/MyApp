@@ -15,7 +15,7 @@ pipeline {
 		
 		stage("Deploy") {
 				when {
-					stage build
+					not build
 				}
 				steps {
 					sh "mvn package"
