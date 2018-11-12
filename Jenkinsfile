@@ -15,13 +15,11 @@ pipeline {
 			}
 		}
 		
-			stage("Deploy") {
-				steps {
-					if (currentResult == SUCCESS) {
-						sh "mvn package"
-					}
-				}
+		stage("Deploy") {
+			steps {
+					sh "mvn package"
 			}
+		}
 	}
 	
 }
