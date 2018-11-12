@@ -1,7 +1,5 @@
 pipeline {
-	node  {
-		checkout scm
-	}
+	agent any
 	stages {
 		stage("clean") {
 			steps {
