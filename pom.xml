@@ -77,6 +77,18 @@
 			</plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+		<repoository>
+			<id>deployment</id>
+			<name>Internal Releases</name>
+			<url>http://localhost:8081/repository/nexusRel/</url>
+			</repository>
+		<snapshotRepository>
+			<id>deployment</id>
+			<name>Internal Snapshot releases</name>
+			<url>http://localhost:8081/repository/nexusSnap/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 
 </project>
