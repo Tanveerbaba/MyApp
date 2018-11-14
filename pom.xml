@@ -81,12 +81,12 @@
 		<repository>
 			<id>deployment</id>
 			<name>Internal Releases</name>
-			<url>http://localhost:8081/repository/nexusRel/</url>
+			<url>http://35.200.139.69:8081/nexus/repository/nexusRel/</url>
 			</repository>
 		<snapshotRepository>
 			<id>deployment</id>
 			<name>Internal Snapshot releases</name>
-			<url>http://localhost:8081/repository/nexusSnap/</url>
+			<url>http://35.200.139.69:8081/nexus/repository/nexusSnap/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
